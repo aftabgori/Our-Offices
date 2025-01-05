@@ -1,0 +1,116 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+
+.ourOfficesCardWebpart {
+  overflow: hidden;
+  padding: 1em;
+  color: "[theme:bodyText, default: #323130]";
+  color: var(--bodyText);
+
+  &.teams {
+    font-family: $ms-font-family-fallbacks;
+  }
+}
+
+.welcome {
+  text-align: center;
+}
+
+.welcomeImage {
+  width: 100%;
+  max-width: 420px;
+}
+
+.links {
+  a {
+    text-decoration: none;
+    color: "[theme:link, default:#03787c]";
+    color: var(--link); // note: CSS Custom Properties support is limited to modern browsers only
+
+    &:hover {
+      text-decoration: underline;
+      color: "[theme:linkHovered, default: #014446]";
+      color: var(--linkHovered); // note: CSS Custom Properties support is limited to modern browsers only
+    }
+  }
+}
+
+.officesContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* Adjusts the card width */
+  gap: 25px;
+  /* Adds more space between cards */
+  padding: 20px;
+}
+
+.officeCard {
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  overflow: hidden;
+  /* Ensures no overflow issues with the title */
+  padding-top: 40px;
+  /* Adjusts for the title so that the flag doesn't overlap */
+}
+
+.officeCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.flagImage {
+  width: 137px;
+  /* Slightly larger flag */
+  height: 82px;
+  margin-bottom: 20px;
+  /* Adds more space below the flag */
+}
+
+.countryName {
+  font-size: 22px;
+  /* Increased font size */
+  font-weight: bold;
+  color: #333;
+  margin: 15px 0;
+}
+
+.address {
+  font-size: 16px;
+  /* Slightly larger font size */
+  color: #666;
+  margin: 10px 0;
+}
+
+.email,
+.phone {
+  font-size: 16px;
+  /* Slightly larger font size */
+  color: #0078d4;
+  /* Changed to a sky blue color */
+  margin: 10px 0;
+}
+
+.email i,
+.phone i {
+  margin-right: 8px;
+  color: #005a9e;
+  /* Darker blue for icons */
+}
+
+.headquartersTitle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #d9534f;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 0 0 0 3px;
+  font-size: 14px;
+  font-weight: bold;
+  z-index: 1;
+  pointer-events: none;
+}

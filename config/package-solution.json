@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "our-offices-client-side-solution",
+    "id": "a24f285c-16f1-4943-bc57-fcb5f4f4b8f9",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.18.2"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "our-offices description"
+      },
+      "longDescription": {
+        "default": "our-offices description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "our-offices Feature",
+        "description": "The feature that activates elements of the our-offices solution.",
+        "id": "229559b3-b1cb-44b7-b634-dc90ff8b4e74",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/our-offices.sppkg"
+  }
+}
